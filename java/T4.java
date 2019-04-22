@@ -52,15 +52,15 @@ class T4 {
         if ((m + n) % 2 != 0) {
           return maxLeft;
         }
-        int maxRight = 0;
+        int minRight = 0;
         if (i == m) {
-          maxRight = nums2[j];
+          minRight = nums2[j];
         } else if (j == n) {
-          maxRight = nums1[i];
+          minRight = nums1[i];
         } else {
-          maxRight = Math.min(nums1[i], nums2[j]);
+          minRight = Math.min(nums1[i], nums2[j]);
         }
-        return (maxLeft + maxRight) / 2.0;
+        return (maxLeft + minRight) / 2.0;
       }
     }
     return 0.0;
