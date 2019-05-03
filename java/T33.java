@@ -17,43 +17,6 @@
 // 输入: nums = [4,5,6,7,0,1,2], target = 3
 // 输出: -1
 
-//先排序，再查找
-class Solution {
-  public int search(int[] nums, int target) {
-    if (nums.length == 0)
-      return -1;
-    int[] arr = new int[nums.length];
-    int i = 0, len = nums.length;
-    while (i < len - 1 && nums[i] < nums[i + 1])
-      i++;
-    for (int j = 0; j < len; j++) {
-      arr[(j + i) % len] = nums[j];
-    }
-    for (int o = 0; o < len; o++) {
-      System.out.print(arr[o] + " ");
-    }
-    int index = this.bs(arr, target);
-    if (index == -1)
-      return index;
-    return (index + i + 1) % len;
-  }
-
-  public int bs(int[] arr, int target) {
-    int len = arr.length;
-    int min = 0, max = len - 1, mid;
-    while (min <= max) {
-      mid = (min + max) / 2;
-      if (arr[mid] < target) {
-        min = mid + 1;
-      } else if (arr[mid] > target) {
-        max = mid - 1;
-      } else {
-        return mid;
-      }
-    }
-    return -1;
-  }
-}
 
 public class T33 {
   public int search(int[] nums, int target) {
