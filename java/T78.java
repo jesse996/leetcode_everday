@@ -33,10 +33,10 @@ class T78 {
             return ret;
         ret.add(new ArrayList<Integer>());// 初始化
         for (int i : nums) {
-            List<Integer> tmp;
-            List<List<Integer>> ttmp = new ArrayList<List<Integer>>();
+            List<Integer> tmp;//放第二层的list
+            List<List<Integer>> ttmp = new ArrayList<>();//，第一层list，放之前的list加上新的之后的list
             for (List<Integer> j : ret) {
-                tmp = new ArrayList<Integer>(j);
+                tmp = new ArrayList<>(j);
                 tmp.add(i);
                 ttmp.add(tmp);
             }
