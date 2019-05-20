@@ -27,8 +27,6 @@ class T3 {
     for (int i = 0, j = 0; j < n; j++) {
       if (map.containsKey(s.charAt(j))) {
         i=Math.max(map.get(s.charAt(j))+1, i);
-        continue;
-        // i = map.get(s.charAt(j)) + 1;
       }
       ans = Math.max(ans, j - i + 1);
       map.put(s.charAt(j), j);
