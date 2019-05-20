@@ -5,7 +5,6 @@ proc lengthOfLongestSubstring(s: string): int =
         ans = 0
         n = s.len
         i = 0
-        j = 0
     var map = initTable[char, int]()
     for j in 0..<n:
         if map.hasKey(s[j]):
