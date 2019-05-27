@@ -1,5 +1,4 @@
-import javax.swing.tree.TreeNode;
-
+package T124a;
 // 给定一个非空二叉树，返回其最大路径和。
 
 // 本题中，路径被定义为一条从树中任意节点出发，达到任意节点的序列。该路径至少包含一个节点，且不一定经过根节点。
@@ -26,6 +25,7 @@ import javax.swing.tree.TreeNode;
 // 输出: 42
 
 //  Definition for a binary tree node. 
+
 class TreeNode {
   int val;
   TreeNode left;
@@ -45,12 +45,21 @@ class Solution {
   }
 
   public int max(TreeNode root) {
-    if (root == null)
+    if (root == null) {
       return 0;
-
+    }
     int left = Math.max(0, max(root.left));
     int right = Math.max(0, max(root.right));
     ret = Math.max(ret, left + right + root.val);
     return Math.max(left, right) + root.val;
+  }
+}
+
+public class T124 {
+  public static void main(String[] args) {
+    TreeNode root = new TreeNode(2);
+    root.left = new TreeNode(1);
+    root.right = new TreeNode(3);
+    System.out.println(new Solution().maxPathSum(root));
   }
 }
