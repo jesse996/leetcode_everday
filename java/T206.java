@@ -27,3 +27,16 @@ class Solution {
     return h.next;
   }
 }
+
+class Solution {
+  public ListNode reverseList(ListNode head) {
+    ListNode pre = null, p = head;
+    while (p != null) {
+      ListNode tmp = p.next;
+      p.next = pre;
+      pre = p;
+      p = tmp;
+    }
+    return pre;
+  }
+}
