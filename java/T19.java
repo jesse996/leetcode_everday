@@ -18,37 +18,37 @@ import java.util.Map;
  */
 // 一，用map
 class Solution {
-  public ListNode removeNthFromEnd(ListNode head, int n) {
-    int count = 0;// 总数
-    ListNode p = head;
-    Map<Integer, ListNode> map = new HashMap<>();
-    while (p != null) {
-      map.put(count, p);
-      p = p.next;
-      count++;
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        int count = 0;// 总数
+        ListNode p = head;
+        Map<Integer, ListNode> map = new HashMap<>();
+        while (p != null) {
+            map.put(count, p);
+            p = p.next;
+            count++;
+        }
+        ListNode curr = map.get(count - n);
+        if (curr == head)
+            return curr.next;
+        ListNode pre = map.get(count - n - 1);
+        pre.next = pre.next.next;
+        return head;
     }
-    ListNode curr = map.get(count - n);
-    if (curr == head)
-      return curr.next;
-    ListNode pre = map.get(count - n - 1);
-    pre.next = pre.next.next;
-    return head;
-  }
 }
 
 // 2.双指针法
-class Solution {
-  public ListNode removeNthFromEnd(ListNode head, int n) {
-    ListNode h = new ListNode(0);
-    h.next = head;
-    ListNode l1 = h, l2 = h;
-    for (int i = 0; i <= n; i++)
-      l1 = l1.next;
-    while (l1 != null) {
-      l1 = l1.next;
-      l2 = l2.next;
+class T19 {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode h = new ListNode(0);
+        h.next = head;
+        ListNode l1 = h, l2 = h;
+        for (int i = 0; i <= n; i++)
+            l1 = l1.next;
+        while (l1 != null) {
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+        l2.next = l2.next.next;
+        return h.next;
     }
-    l2.next = l2.next.next;
-    return h.next;
-  }
 }

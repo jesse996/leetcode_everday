@@ -16,43 +16,53 @@ import java.util.*;
 
 // 1.用map存
 
-public class Solution {
-  public NodeList detectCycle(ListNode head) {
-    Set set = new HashSet<ListNode>();
-    ListNode p = head;
-    while (p != null) {
-      if (set.contains(p))
-        return p;
-      set.add(p);
-      p = p.next;
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int x) {
+        val = x;
+        next = null;
     }
-    return null;
-  }
+}
+
+class Solution {
+    public ListNode detectCycle(ListNode head) {
+        Set set = new HashSet<ListNode>();
+        ListNode p = head;
+        while (p != null) {
+            if (set.contains(p))
+                return p;
+            set.add(p);
+            p = p.next;
+        }
+        return null;
+    }
 }
 
 // 2.用快慢指针
-public class Solution {
-  public NodeList detectCycle(ListNode head) {
-    ListNode fast = head, slow = head;
-    boolean hasCircle = false;
-    // 判断是否有环
-    while (fast != null && fast.next != null) {
-      fast = fast.next.next;
-      slow = slow.next;
-      if (fast != null && fast == slow) {
-        hasCircle = true;
-        break;
-      }
+class Solution2 {
+    public ListNode detectCycle(ListNode head) {
+        ListNode fast = head, slow = head;
+        boolean hasCircle = false;
+        // 判断是否有环
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast != null && fast == slow) {
+                hasCircle = true;
+                break;
+            }
+        }
+        // 找出位置
+        if (hasCircle) {
+            fast = head;
+            while (fast != slow) {
+                slow = slow.next;
+                fast = fast.next;
+            }
+            return fast;
+        }
+        return null;
     }
-    // 找出位置
-    if (hasCircle) {
-      fast = head;
-      while (fast != slow) {
-        slow = slow.next;
-        fast = fast.next;
-      }
-      return fast;
-    }
-    return null;
-  }
 }

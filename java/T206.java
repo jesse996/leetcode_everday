@@ -8,35 +8,31 @@
 // 你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
 
 /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
+ * Definition for singly-linked list. public class ListNode { int val; ListNode
+ * next; ListNode(int x) { val = x; } }
  */
 class Solution {
-  public ListNode reverseList(ListNode head) {
-    ListNode p = head, q, h = new ListNode(0);
-    while (p != null) {
-      q = p.next;
-      p.next = h.next;
-      h.next = p;
-      p = q;
+    public ListNode reverseList(ListNode head) {
+        ListNode p = head, q, h = new ListNode(0);
+        while (p != null) {
+            q = p.next;
+            p.next = h.next;
+            h.next = p;
+            p = q;
+        }
+        return h.next;
     }
-    return h.next;
-  }
 }
 
-class Solution {
-  public ListNode reverseList(ListNode head) {
-    ListNode pre = null, p = head;
-    while (p != null) {
-      ListNode tmp = p.next;
-      p.next = pre;
-      pre = p;
-      p = tmp;
+class Solution2 {
+    public ListNode reverseList(ListNode head) {
+        ListNode pre = null, p = head;
+        while (p != null) {
+            ListNode tmp = p.next;
+            p.next = pre;
+            pre = p;
+            p = tmp;
+        }
+        return pre;
     }
-    return pre;
-  }
 }

@@ -20,60 +20,57 @@ import java.util.*;
 //一个栈，每次push2个，第2个是最小的数
 class MinStack {
 
-  /** initialize your data structure here. */
-  private Stack<Integer> stack;
+    /** initialize your data structure here. */
+    private Stack<Integer> stack;
 
-  public MinStack() {
-    this.stack = new Stack<Integer>();
-  }
-
-  public void push(int x) {
-    if (this.stack.empty()) {
-      this.stack.push(x);
-      this.stack.push(x);
-    } else {
-      int tmp = this.stack.peek();
-      this.stack.push(x);
-      if (tmp > x) {
-        this.stack.push(x);
-      } else {
-        this.stack.push(tmp);
-      }
+    public MinStack() {
+        this.stack = new Stack<Integer>();
     }
-  }
 
-  public void pop() {
-    this.stack.pop();
-    this.stack.pop();
-  }
+    public void push(int x) {
+        if (this.stack.empty()) {
+            this.stack.push(x);
+            this.stack.push(x);
+        } else {
+            int tmp = this.stack.peek();
+            this.stack.push(x);
+            if (tmp > x) {
+                this.stack.push(x);
+            } else {
+                this.stack.push(tmp);
+            }
+        }
+    }
 
-  public int top() {
+    public void pop() {
+        this.stack.pop();
+        this.stack.pop();
+    }
 
-    return this.stack.get(this.stack.size() - 2);
-  }
+    public int top() {
 
-  public int getMin() {
-    return this.stack.peek();
-  }
+        return this.stack.get(this.stack.size() - 2);
+    }
 
-  public static void main(String[] args) {
-    MinStack a = new MinStack();
-    // a.push(-1);
-    // a.push(0);
-    // a.push(-3);
-    // System.out.println(a.getMin());
-    // a.pop();
-    // System.out.println(a.top());
-    System.out.println(Integer.MAX_VALUE == Integer.MAX_VALUE);
+    public int getMin() {
+        return this.stack.peek();
+    }
 
-  }
+    public static void main(String[] args) {
+        MinStack a = new MinStack();
+        // a.push(-1);
+        // a.push(0);
+        // a.push(-3);
+        // System.out.println(a.getMin());
+        // a.pop();
+        // System.out.println(a.top());
+        System.out.println(Integer.MAX_VALUE == Integer.MAX_VALUE);
+
+    }
 }
 
 /**
-* Your MinStack object will be instantiated and called as such:
-* MinStack obj = new MinStack();
-* obj.push(x);
-* obj.pop();
-* int param_3 = obj.top();
-* int param_4 = obj.getMin();
-*/
+ * Your MinStack object will be instantiated and called as such: MinStack obj =
+ * new MinStack(); obj.push(x); obj.pop(); int param_3 = obj.top(); int param_4
+ * = obj.getMin();
+ */
