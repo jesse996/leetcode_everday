@@ -17,7 +17,7 @@
 
 //字符串相乘
 
-class Solution {
+class T43 {
     public String multiply(String num1, String num2) {
 
         // num1的第i位(高位从0开始)和num2的第j位相乘的结果在乘积中的位置是[i+j, i+j+1]

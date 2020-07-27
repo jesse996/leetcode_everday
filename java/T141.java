@@ -8,7 +8,7 @@
  */
 
 // 快慢指针法
-class Solution {
+class T141 {
     public boolean hasCycle(ListNode head) {
         if (head == null || head.next == null)
             return false;

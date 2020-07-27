@@ -15,7 +15,7 @@
 // 输入: 218
 // 输出: false
 
-class Solution {
+class T231 {
   public boolean isPowerOfTwo(int n) {
     if (n == 1)
       return true;

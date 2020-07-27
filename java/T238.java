@@ -9,7 +9,7 @@
 // 进阶：
 // 你可以在常数空间复杂度内完成这个题目吗？（ 出于对空间复杂度分析的目的，输出数组不被视为额外空间。）
 
-class Solution {
+class T238 {
   public int[] productExceptSelf(int[] nums) {
     int left = 1, right = 1;
     int n = nums.length;

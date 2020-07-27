@@ -4,7 +4,7 @@
 
 // 问总共有多少条不同的路径？
 
-class Solution {
+class T62 {
   public int uniquePaths(int m, int n) {
       int[][] dp = new int[m][n];        
       for (int i = 0; i < m; i++) {

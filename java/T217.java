@@ -17,7 +17,7 @@ import java.util.*;
 // 输入: [1,1,1,3,3,4,3,2,4,2]
 // 输出: true
 
-class Solution {
+class T127 {
   public boolean containsDuplicate(int[] nums) {
     Set<Integer> set = new HashSet<>();
     for (int i : nums) {

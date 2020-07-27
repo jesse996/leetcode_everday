@@ -17,16 +17,16 @@
  *     ListNode(int x) { val = x; }
  * }
  */
-class ListNode {
-  int val;
-  ListNode next;
+//class ListNode {
+//  int val;
+//  ListNode next;
+//
+//  ListNode(int x) {
+//    val = x;
+//  }
+//}
 
-  ListNode(int x) {
-    val = x;
-  }
-}
-
-class Solution {
+class T148 {
   public ListNode sortList(ListNode head) {
     if (head == null)
       return null;

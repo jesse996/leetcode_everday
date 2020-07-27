@@ -54,7 +54,7 @@ import java.util.*;
 
 // 2 。用ackII之差
 
-class Solution {
+class T20 {
   public boolean isValid(String s) {
     int len = s.length();
     char[] list = s.toCharArray();

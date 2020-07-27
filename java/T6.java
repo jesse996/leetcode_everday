@@ -19,7 +19,7 @@ import java.util.List;
  * 
  * L D R E O E I I E C I H N T S G
  */
-class Solution {
+class T6 {
   public String convert(String s, int numRows) {
     if (numRows==1) {
       return s;

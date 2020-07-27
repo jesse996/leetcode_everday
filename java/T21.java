@@ -13,16 +13,16 @@
  * next; ListNode(int x) { val = x; } }
  * 
  */
-class ListNode {
-  int val;
-  ListNode next;
+//class ListNode {
+//  int val;
+//  ListNode next;
+//
+//  ListNode(int x) {
+//    val = x;
+//  }
+//}
 
-  ListNode(int x) {
-    val = x;
-  }
-}
-
-class Solution {
+class T21 {
   public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
     ListNode i = l1, j = l2, head,p, tmp;
     p=head=new ListNode(0);

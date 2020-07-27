@@ -16,17 +16,17 @@ import java.util.*;
 
 // 1.用map存
 
-class ListNode {
-    int val;
-    ListNode next;
+//class ListNode {
+//    int val;
+//    ListNode next;
+//
+//    ListNode(int x) {
+//        val = x;
+//        next = null;
+//    }
+//}
 
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
-
-class Solution {
+class T142 {
     public ListNode detectCycle(ListNode head) {
         Set set = new HashSet<ListNode>();
         ListNode p = head;
@@ -41,7 +41,7 @@ class Solution {
 }
 
 // 2.用快慢指针
-class Solution2 {
+class T142_2 {
     public ListNode detectCycle(ListNode head) {
         ListNode fast = head, slow = head;
         boolean hasCircle = false;

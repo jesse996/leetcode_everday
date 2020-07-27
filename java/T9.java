@@ -6,7 +6,7 @@
  * 输入: 121 输出: true
  */
 
-class Solution {
+class T9 {
   public boolean isPalindrome(int x) {
     // 特殊情况：
     // 如上所述，当 x < 0 时，x 不是回文数。

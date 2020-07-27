@@ -31,7 +31,7 @@ import java.util.Map;
 // 输入: "IV"
 // 输出: 4
 
-class Solution {
+class T13 {
   public int romanToInt(String s) {
     Map<String, Integer> map = new HashMap<>();
     map.put("I", 1);

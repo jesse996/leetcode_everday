@@ -14,7 +14,7 @@
 
 
 //一，从前往后，需要辅助空间
-class Solution {
+class T88 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int[] c=nums1.clone();
         int i=0,j=0,k=0;
@@ -35,7 +35,7 @@ class Solution {
 }
 //二，从后往前，不需要辅助空间
 
-class Solution2 {
+class T88_2 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int p= m-- + n-- -1;
         while(m>=0&&n>=0){

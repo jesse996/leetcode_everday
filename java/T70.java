@@ -20,7 +20,7 @@
 // 2.  1 阶 + 2 阶
 // 3.  2 阶 + 1 阶
 
-class Solution {
+class T70 {
     public int climbStairs(int n) {
         if(n==1) return 1;      
         int i=1,j=2,k;

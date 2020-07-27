@@ -15,7 +15,7 @@ class ListNode {
 }
 
 // 1.暴力法，n方
-class Solution {
+class T160 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode p = headA;
         for (; p != null; p = p.next) {
@@ -31,7 +31,7 @@ class Solution {
 }
 
 // 2. O（n）
-class Solution2 {
+class T160_2 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null)
             return null;

@@ -35,7 +35,7 @@ class TreeNode {
     }
 }
 
-class Solution {
+class T124_1 {
     private int ret = Integer.MIN_VALUE;
 
     public int maxPathSum(TreeNode root) {
@@ -59,6 +59,6 @@ public class T124 {
         TreeNode root = new TreeNode(2);
         root.left = new TreeNode(1);
         root.right = new TreeNode(3);
-        System.out.println(new Solution().maxPathSum(root));
+        System.out.println(new T124_1().maxPathSum(root));
     }
 }

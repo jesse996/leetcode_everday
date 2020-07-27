@@ -12,7 +12,7 @@
 // 输出: 2
 
 //摩尔投票法
-class Solution {
+class T169 {
   public int majorityElement(int[] nums) {
     int maj = nums[0], count = 1;
     for (int i = 1; i < nums.length - 1; i++) {

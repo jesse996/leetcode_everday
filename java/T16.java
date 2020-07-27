@@ -9,7 +9,7 @@ import java.util.Arrays;
  * 与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).
  */
 
-class Solution {
+class T16 {
     public int threeSumClosest(int[] nums, int target) {
         int len=nums.length;
         Arrays.sort(nums);

@@ -29,7 +29,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class T235 {
   private TreeNode res;
 
   public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

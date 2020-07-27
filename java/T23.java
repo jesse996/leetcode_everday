@@ -12,17 +12,17 @@
 // 输出: 1->1->2->3->4->4->5->6
 
 //  * Definition for singly-linked list.
-class ListNode {
-  int val;
-  ListNode next;
-
-  ListNode(int x) {
-    val = x;
-  }
-}
+//class ListNode {
+//  int val;
+//  ListNode next;
+//
+//  ListNode(int x) {
+//    val = x;
+//  }
+//}
 
 //分治法，分成多个合并2个
-class Solution {
+class T23 {
   public ListNode mergeKLists(ListNode[] lists) {
     if(lists.length==0){
       return null;

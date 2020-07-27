@@ -38,7 +38,7 @@
  */
 
 //中序遍历
-class Solution {
+class T230 {
   int count, ans;
 
   public int kthSmallest(TreeNode root, int k) {
