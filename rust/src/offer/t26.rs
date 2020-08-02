@@ -22,7 +22,7 @@ use std::cell::RefCell;
 
 pub fn is_sub_structure(a: Option<Rc<RefCell<TreeNode>>>, b: Option<Rc<RefCell<TreeNode>>>) -> bool {
     //use `a.as_ref().unwrap().take().left`  when take() is stable
-    (a.is_some() && b.is_some()) && (rescue(&a, &b) || is_sub_structure(a.as_ref().unwrap().borrow().left.clone(), b.clone()) || is_sub_structure(a.as_ref().unwrap().borrow().right.clone(), b.clone()))
+    (a.is_some() && b.is_some()) && (rescue(&a, &b) || is_sub_structure(a.as_ref().unwrap().borrow_mut().left.take(), b.clone()) || is_sub_structure(a.as_ref().unwrap().borrow_mut().right.take(), b.clone()))
 }
 
 fn rescue(a: &Option<Rc<RefCell<TreeNode>>>, b: &Option<Rc<RefCell<TreeNode>>>) -> bool {
