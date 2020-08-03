@@ -32,12 +32,3 @@ pub fn mirror_tree(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<Tre
         Some(root)
     }
 }
-
-fn init_tree(data: Vec<i32>) -> TreeNode {}
-
-#[test]
-fn test() {
-    let mut root = TreeNode::new(4);
-    root.left = Some(Rc::new(RefCell::new(TreeNode::new(2))));
-    root.left = Some(Rc::new(RefCell::new(TreeNode::new(2))));
-}
