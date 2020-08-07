@@ -44,7 +44,7 @@ pub fn tictactoe(board: Vec<String>) -> String {
     for i in 0..n {
         for j in 0..n {
             let mut offset = 0i32;
-            if board[i].get(j..j + 1).unwrap() == "X" { offset = 1 } else if board[i].get(j..j + 1).unwrap() == "O" { offset = -1 } else { is_full = false; }
+            if board[i].chars().nth(j).unwrap() == 'X' { offset = 1 } else if board[i].chars().nth(j).unwrap() == 'O'{ offset = -1 } else { is_full = false; }
             if i == j {
                 dia1 += offset;
             }
