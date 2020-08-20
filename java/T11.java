@@ -5,7 +5,7 @@
  * ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
  */
 
-class Solution {
+class T11 {
   public int maxArea(int[] height) {
     int max = 0, len = height.length, i = 0, j = len - 1;
     while (i < j) {
