@@ -12,9 +12,11 @@
 public class T387 {
     public int firstUniqChar(String s) {
         int[] arr = new int[26];
+        //先记录每个字符最后一次出现的引索
         for (int i = 0; i < s.length(); i++) {
             arr[s.charAt(i) - 'a'] = i;
         }
+        //如果第一次引索和记录的不一样说明有重复
         for (int i = 0; i < s.length(); i++) {
             if (arr[s.charAt(i)-'a'] != i) {
                 arr[s.charAt(i)-'a'] = -1;
