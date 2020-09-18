@@ -33,7 +33,7 @@ public class T239 {
         if (n * k == 0) return new int[0];
         int[] res = new int[n - k + 1];
         for (int i = 0; i < n; i++) {
-            while (i > 0 && !deque.isEmpty() && deque.peekLast() < nums[i]) {
+            while (!deque.isEmpty() && deque.peekLast() < nums[i]) {
                 deque.pollLast();
             }
             deque.addLast(nums[i]);
