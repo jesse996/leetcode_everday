@@ -34,38 +34,38 @@ public class T450 {
     }
 
     //一：删除后继节点
-    public TreeNode deleteNode(TreeNode root, int key) {
-        if (root == null) return null;
-        if (root.val > key) {
-            root.left = deleteNode(root.left, key);
-        } else if (root.val < key) {
-            root.right = deleteNode(root.right, key);
-        } else {
-            if (root.right == null) {
-                root = root.left;
-            } else if (root.left == null) {
-                root = root.right;
-            } else {
-                TreeNode next = root.right;
-                while (next.left != null) {
-                    next = next.left;
-                }
-                root.val=next.val;
-                root.right=deleteMin(root.right);
-            }
-        }
-        return root;
-    }
-
-    public TreeNode deleteMin(TreeNode node) {
-        if (node.left == null) {
-            TreeNode r = node.right;
-            node.right = null;
-            return r;
-        }
-        node.left = deleteMin(node.left);
-        return node;
-    }
+//    public TreeNode deleteNode(TreeNode root, int key) {
+//        if (root == null) return null;
+//        if (root.val > key) {
+//            root.left = deleteNode(root.left, key);
+//        } else if (root.val < key) {
+//            root.right = deleteNode(root.right, key);
+//        } else {
+//            if (root.right == null) {
+//                root = root.left;
+//            } else if (root.left == null) {
+//                root = root.right;
+//            } else {
+//                TreeNode next = root.right;
+//                while (next.left != null) {
+//                    next = next.left;
+//                }
+//                root.val=next.val;
+//                root.right=deleteMin(root.right);
+//            }
+//        }
+//        return root;
+//    }
+//
+//    public TreeNode deleteMin(TreeNode node) {
+//        if (node.left == null) {
+//            TreeNode r = node.right;
+//            node.right = null;
+//            return r;
+//        }
+//        node.left = deleteMin(node.left);
+//        return node;
+//    }
 
     //二：删除前驱节点
     public TreeNode deleteNode(TreeNode root, int key) {
