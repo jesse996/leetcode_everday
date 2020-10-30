@@ -7,7 +7,7 @@ import java.util.Stack;
  * 假设输入的数组的任意两个数字都互不相同
  * 参考以下这颗二叉搜索树：
  * <p>
- *  5
+ * 5
  * / \
  * 2   6
  * / \
@@ -51,6 +51,7 @@ public class T33 {
             stack.add(postorder[i]);
         }
         return true;
+
     }
 
 }
