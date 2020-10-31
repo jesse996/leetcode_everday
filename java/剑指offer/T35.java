@@ -89,4 +89,24 @@ public class T35 {
         }
         return copy;
     }
+    public Node copyRandomList2(Node head) {
+        if (head==null) return null;
+        Node oldNode = head, newNode = new Node(head.val);
+        visited.put(oldNode, newNode);
+        while (oldNode != null) {
+            newNode.random = getClonedNode(oldNode.random);
+            newNode.next = getClonedNode(oldNode.next);
+            oldNode = oldNode.next;
+            newNode = newNode.next;
+        }
+        return visited.get(head);
+    }
+
+    private Node getClonedNode(Node node) {
+        if (node==null) return null;
+        if (visited.get(node)==null) {
+            visited.put(node, new Node(node.val));
+        }
+        return visited.get(node);
+    }
 }
