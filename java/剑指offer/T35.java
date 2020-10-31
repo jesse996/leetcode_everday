@@ -1,9 +1,6 @@
 package 剑指offer;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by jesse on 2020/10/31 下午4:28
@@ -68,6 +65,28 @@ public class T35 {
         visited.put(node, copy);
         copy.next = dfs(node.next);
         copy.random = dfs(node.random);
+        return copy;
+    }
+
+    public Node bfs(Node node){
+        if (node==null) return null;
+        Queue<Node> queue = new ArrayDeque<>();
+        Node copy = new Node(node.val);
+        queue.add(node);
+        visited.put(node, copy);
+        while (!queue.isEmpty()){
+            Node tmp = queue.poll();
+            if (tmp.next!=null&&visited.get(tmp.next) == null) {
+                visited.put(tmp.next, new Node(tmp.next.val));
+                queue.add(tmp.next);
+            }
+            if (tmp.random != null && visited.get(tmp.random) == null) {
+                visited.put(tmp.random, new Node(tmp.random.val));
+                queue.add(tmp.random);
+            }
+            visited.get(tmp).next = visited.get(tmp.next);
+            visited.get(tmp).random = visited.get(tmp.random);
+        }
         return copy;
     }
 }
