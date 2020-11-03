@@ -24,6 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="字符串的排列">
       <change afterPath="$PROJECT_DIR$/../java/剑指offer/T39.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +127,7 @@
       <workItem from="1598887833925" duration="767000" />
       <workItem from="1599487677880" duration="1887000" />
       <workItem from="1604070637166" duration="1607000" />
-      <workItem from="1604403251202" duration="4630000" />
+      <workItem from="1604403251202" duration="5003000" />
     </task>
     <task id="LOCAL-00001" summary="字符串中的第一个唯一字符">
       <created>1598888566487</created>
