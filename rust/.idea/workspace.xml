@@ -22,10 +22,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="二叉树中和为某一值的路径">
-      <change afterPath="$PROJECT_DIR$/src/offer/t38.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/mod.rs" afterDir="false" />
+    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="字符串的排列">
+      <change afterPath="$PROJECT_DIR$/../java/剑指offer/T39.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +126,7 @@
       <workItem from="1598887833925" duration="767000" />
       <workItem from="1599487677880" duration="1887000" />
       <workItem from="1604070637166" duration="1607000" />
-      <workItem from="1604403251202" duration="4320000" />
+      <workItem from="1604403251202" duration="4630000" />
     </task>
     <task id="LOCAL-00001" summary="字符串中的第一个唯一字符">
       <created>1598888566487</created>
@@ -144,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604072230022</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="字符串的排列">
+      <created>1604407658271</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604407658271</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +171,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="字符串中的第一个唯一字符" />
     <MESSAGE value="二叉树中和为某一值的路径" />
-    <option name="LAST_COMMIT_MESSAGE" value="二叉树中和为某一值的路径" />
+    <MESSAGE value="字符串的排列" />
+    <option name="LAST_COMMIT_MESSAGE" value="字符串的排列" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1253" y="468" key="FileChooserDialogImpl" timestamp="1598887861705">
@@ -193,10 +199,10 @@
     </state>
     <state width="1358" height="262" key="GridCell.Tab.0.right/0.0.2560.1402@0.0.2560.1402" timestamp="1599489545232" />
     <state width="1514" height="227" key="GridCell.Tab.0.right/0.26.1920.1054@0.26.1920.1054" timestamp="1604407603071" />
-    <state x="356" y="506" key="Vcs.Push.Dialog.v2" timestamp="1604072235417">
+    <state x="356" y="506" key="Vcs.Push.Dialog.v2" timestamp="1604407661850">
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
     <state x="475" y="638" key="Vcs.Push.Dialog.v2/0.0.2560.1402@0.0.2560.1402" timestamp="1598888578848" />
-    <state x="356" y="506" key="Vcs.Push.Dialog.v2/0.26.1920.1054@0.26.1920.1054" timestamp="1604072235417" />
+    <state x="356" y="506" key="Vcs.Push.Dialog.v2/0.26.1920.1054@0.26.1920.1054" timestamp="1604407661850" />
   </component>
 </project>
