@@ -23,8 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="字符串的排列">
-      <change afterPath="$PROJECT_DIR$/../java/剑指offer/T39.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/offer/t40.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,16 +67,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo.Run rust">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Cargo.Test offer::t40::test">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,6 +89,18 @@
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test offer::t40::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package rust --bin rust offer::t40::test -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
@@ -108,6 +119,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test offer::t40::test" />
         <item itemvalue="Cargo.Run rust" />
       </list>
     </recent_temporary>
@@ -128,6 +140,7 @@
       <workItem from="1599487677880" duration="1887000" />
       <workItem from="1604070637166" duration="1607000" />
       <workItem from="1604403251202" duration="5003000" />
+      <workItem from="1604473885884" duration="2564000" />
     </task>
     <task id="LOCAL-00001" summary="字符串中的第一个唯一字符">
       <created>1598888566487</created>
@@ -180,26 +193,26 @@
       <screen x="0" y="0" width="2560" height="1402" />
     </state>
     <state x="1253" y="468" key="FileChooserDialogImpl/0.0.2560.1402@0.0.2560.1402" timestamp="1598887861705" />
-    <state width="1514" height="227" key="GridCell.Tab.0.bottom" timestamp="1604407603072">
+    <state width="1503" height="227" key="GridCell.Tab.0.bottom" timestamp="1604475937695">
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
     <state width="1358" height="262" key="GridCell.Tab.0.bottom/0.0.2560.1402@0.0.2560.1402" timestamp="1599489545232" />
-    <state width="1514" height="227" key="GridCell.Tab.0.bottom/0.26.1920.1054@0.26.1920.1054" timestamp="1604407603072" />
-    <state width="1514" height="227" key="GridCell.Tab.0.center" timestamp="1604407603070">
+    <state width="1503" height="227" key="GridCell.Tab.0.bottom/0.26.1920.1054@0.26.1920.1054" timestamp="1604475937695" />
+    <state width="1503" height="227" key="GridCell.Tab.0.center" timestamp="1604475937694">
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
     <state width="1358" height="262" key="GridCell.Tab.0.center/0.0.2560.1402@0.0.2560.1402" timestamp="1599489545232" />
-    <state width="1514" height="227" key="GridCell.Tab.0.center/0.26.1920.1054@0.26.1920.1054" timestamp="1604407603070" />
-    <state width="1514" height="227" key="GridCell.Tab.0.left" timestamp="1604407603069">
+    <state width="1503" height="227" key="GridCell.Tab.0.center/0.26.1920.1054@0.26.1920.1054" timestamp="1604475937694" />
+    <state width="1503" height="227" key="GridCell.Tab.0.left" timestamp="1604475937693">
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
     <state width="1358" height="262" key="GridCell.Tab.0.left/0.0.2560.1402@0.0.2560.1402" timestamp="1599489545231" />
-    <state width="1514" height="227" key="GridCell.Tab.0.left/0.26.1920.1054@0.26.1920.1054" timestamp="1604407603069" />
-    <state width="1514" height="227" key="GridCell.Tab.0.right" timestamp="1604407603071">
+    <state width="1503" height="227" key="GridCell.Tab.0.left/0.26.1920.1054@0.26.1920.1054" timestamp="1604475937693" />
+    <state width="1503" height="227" key="GridCell.Tab.0.right" timestamp="1604475937694">
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
     <state width="1358" height="262" key="GridCell.Tab.0.right/0.0.2560.1402@0.0.2560.1402" timestamp="1599489545232" />
-    <state width="1514" height="227" key="GridCell.Tab.0.right/0.26.1920.1054@0.26.1920.1054" timestamp="1604407603071" />
+    <state width="1503" height="227" key="GridCell.Tab.0.right/0.26.1920.1054@0.26.1920.1054" timestamp="1604475937694" />
     <state x="356" y="506" key="Vcs.Push.Dialog.v2" timestamp="1604407661850">
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
