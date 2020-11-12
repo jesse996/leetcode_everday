@@ -22,12 +22,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="最小的k个数">
-      <change afterPath="$PROJECT_DIR$/../java/剑指offer/T43.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/offer/t43.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/mod.rs" afterDir="false" />
-    </list>
+    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="最小的k个数" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +138,7 @@
       <workItem from="1604403251202" duration="5003000" />
       <workItem from="1604473885884" duration="3203000" />
       <workItem from="1604570091642" duration="51000" />
-      <workItem from="1605172722940" duration="1039000" />
+      <workItem from="1605172722940" duration="1331000" />
     </task>
     <task id="LOCAL-00001" summary="字符串中的第一个唯一字符">
       <created>1598888566487</created>
