@@ -22,7 +22,11 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="最小的k个数" />
+    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="最小的k个数">
+      <change afterPath="$PROJECT_DIR$/src/offer/t44.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offer/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/mod.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,13 +68,15 @@
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
   <component name="RunManager" selected="Cargo.Test offer::t40::test">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,6 +145,7 @@
       <workItem from="1604473885884" duration="3203000" />
       <workItem from="1604570091642" duration="51000" />
       <workItem from="1605172722940" duration="1331000" />
+      <workItem from="1605180805511" duration="1476000" />
     </task>
     <task id="LOCAL-00001" summary="字符串中的第一个唯一字符">
       <created>1598888566487</created>
@@ -199,26 +206,26 @@
       <screen x="0" y="0" width="2560" height="1402" />
     </state>
     <state x="1253" y="468" key="FileChooserDialogImpl/0.0.2560.1402@0.0.2560.1402" timestamp="1598887861705" />
-    <state width="1503" height="227" key="GridCell.Tab.0.bottom" timestamp="1604477554406">
+    <state width="1503" height="227" key="GridCell.Tab.0.bottom" timestamp="1605182188348">
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
     <state width="1358" height="262" key="GridCell.Tab.0.bottom/0.0.2560.1402@0.0.2560.1402" timestamp="1599489545232" />
-    <state width="1503" height="227" key="GridCell.Tab.0.bottom/0.26.1920.1054@0.26.1920.1054" timestamp="1604477554406" />
-    <state width="1503" height="227" key="GridCell.Tab.0.center" timestamp="1604477554405">
+    <state width="1503" height="227" key="GridCell.Tab.0.bottom/0.26.1920.1054@0.26.1920.1054" timestamp="1605182188348" />
+    <state width="1503" height="227" key="GridCell.Tab.0.center" timestamp="1605182188347">
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
     <state width="1358" height="262" key="GridCell.Tab.0.center/0.0.2560.1402@0.0.2560.1402" timestamp="1599489545232" />
-    <state width="1503" height="227" key="GridCell.Tab.0.center/0.26.1920.1054@0.26.1920.1054" timestamp="1604477554405" />
-    <state width="1503" height="227" key="GridCell.Tab.0.left" timestamp="1604477554405">
+    <state width="1503" height="227" key="GridCell.Tab.0.center/0.26.1920.1054@0.26.1920.1054" timestamp="1605182188347" />
+    <state width="1503" height="227" key="GridCell.Tab.0.left" timestamp="1605182188345">
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
     <state width="1358" height="262" key="GridCell.Tab.0.left/0.0.2560.1402@0.0.2560.1402" timestamp="1599489545231" />
-    <state width="1503" height="227" key="GridCell.Tab.0.left/0.26.1920.1054@0.26.1920.1054" timestamp="1604477554405" />
-    <state width="1503" height="227" key="GridCell.Tab.0.right" timestamp="1604477554405">
+    <state width="1503" height="227" key="GridCell.Tab.0.left/0.26.1920.1054@0.26.1920.1054" timestamp="1605182188345" />
+    <state width="1503" height="227" key="GridCell.Tab.0.right" timestamp="1605182188347">
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
     <state width="1358" height="262" key="GridCell.Tab.0.right/0.0.2560.1402@0.0.2560.1402" timestamp="1599489545232" />
-    <state width="1503" height="227" key="GridCell.Tab.0.right/0.26.1920.1054@0.26.1920.1054" timestamp="1604477554405" />
+    <state width="1503" height="227" key="GridCell.Tab.0.right/0.26.1920.1054@0.26.1920.1054" timestamp="1605182188347" />
     <state x="356" y="506" width="808" height="530" key="Vcs.Push.Dialog.v2" timestamp="1604476530287">
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
