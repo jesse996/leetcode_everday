@@ -1,6 +1,6 @@
 use std::cmp::min;
 
-pub fn nth_ugly_number(n: i32) -> i32 {
+pub fn nth_ugly_number(n: i64) -> i64 {
     let mut dp = vec![0; n as usize];
     dp[0] = 1;
     let mut a = 0;
@@ -26,4 +26,12 @@ pub fn nth_ugly_number(n: i32) -> i32 {
     }
     dp[n as usize - 1]
 }
+
+#[test]
+fn test(){
+    println!("{}",nth_ugly_number(100));
+    println!("{}",nth_ugly_number(1000));
+    println!("{}",nth_ugly_number(10000))
+}
+
 
