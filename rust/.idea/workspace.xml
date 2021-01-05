@@ -22,10 +22,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="从前序与中序遍历序列构造二叉树">
+    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment=" 从中序与后序遍历序列构造二叉树">
       <change afterPath="$PROJECT_DIR$/../c++/cmake-build-debug/CMakeFiles/c++.dir/T116.cpp.o" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/cmake-build-debug/CMakeFiles/c++.dir/T654.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/t106.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/t652.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
@@ -183,7 +183,7 @@
       <workItem from="1609662327504" duration="3392000" />
       <workItem from="1609812568152" duration="866000" />
       <workItem from="1609813622676" duration="942000" />
-      <workItem from="1609814946385" duration="7215000" />
+      <workItem from="1609814946385" duration="11465000" />
     </task>
     <task id="LOCAL-00001" summary="字符串中的第一个唯一字符">
       <created>1598888566487</created>
@@ -234,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609823193271</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=" 从中序与后序遍历序列构造二叉树">
+      <created>1609824023939</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609824023939</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +267,8 @@
     <MESSAGE value="最小的k个数" />
     <MESSAGE value="最大二叉树 rust" />
     <MESSAGE value="从前序与中序遍历序列构造二叉树" />
-    <option name="LAST_COMMIT_MESSAGE" value="从前序与中序遍历序列构造二叉树" />
+    <MESSAGE value=" 从中序与后序遍历序列构造二叉树" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 从中序与后序遍历序列构造二叉树" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
