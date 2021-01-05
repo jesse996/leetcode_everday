@@ -1,7 +1,12 @@
+use crate::t654::Solution;
+
 mod offer;
 mod t387;
 mod t350;
 mod t125;
 mod t654;
 
-fn main() {}
+fn main() {
+    let vec = vec![3,2,1,6,0,5];
+    dbg!(  Solution::construct_maximum_binary_tree(vec));
+}

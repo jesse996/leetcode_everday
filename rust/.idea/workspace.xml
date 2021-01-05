@@ -23,9 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="最小的k个数">
-      <change afterPath="$PROJECT_DIR$/src/t654.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/cmake-build-debug/CMakeFiles/c++.dir/T116.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/cmake-build-debug/CMakeFiles/c++.dir/T654.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/t654.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/t654.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KotlinMultiplatform">
+    <allAvailableExecutables />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="klpw418l" />
@@ -70,13 +75,15 @@
     <property name="settings.editor.selected.configurable" value="language.rust" />
   </component>
   <component name="RunManager" selected="Cargo.Run rust">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,7 +179,10 @@
       <workItem from="1606187162443" duration="481000" />
       <workItem from="1608865501874" duration="456000" />
       <workItem from="1608880261455" duration="14000" />
-      <workItem from="1609662327504" duration="2553000" />
+      <workItem from="1609662327504" duration="3392000" />
+      <workItem from="1609812568152" duration="866000" />
+      <workItem from="1609813622676" duration="942000" />
+      <workItem from="1609814946385" duration="5399000" />
     </task>
     <task id="LOCAL-00001" summary="字符串中的第一个唯一字符">
       <created>1598888566487</created>

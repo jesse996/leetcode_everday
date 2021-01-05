@@ -49,27 +49,28 @@ impl TreeNode {
     }
 }
 
-pub fn construct_maximum_binary_tree(nums: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
-    build(&nums,0,nums.len()-1)
-}
+pub struct Solution;
 
-pub fn build(nums: &Vec<i32>, start: usize, end: usize)->Option<Rc<RefCell<TreeNode>>> {
-    //find max and index
-    if start > end{
-        return None;
+impl Solution {
+    pub fn construct_maximum_binary_tree(nums: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
+        Self::build(&nums, 0, nums.len() as i32 - 1)
     }
-    let mut max = i32::min_value();
-    let mut index = 0usize;
-    for (i, &num) in nums[start..=end].iter().enumerate() {
-        if num > max {
-            max = num;
-            index = i;
-        };
+
+    pub fn build(nums: &Vec<i32>, start: i32, end: i32) -> Option<Rc<RefCell<TreeNode>>> {
+        if start > end {
+            return None;
+
+        }
+        let mut i = start;
+        for j in start..=end {
+            if nums[j as usize] > nums[i as usize] {
+                i = j;
+            }
+        }
+        Some(Rc::new(RefCell::new(TreeNode {
+            val: nums[i as usize],
+            left: Self::build(nums, start, i - 1),
+            right: Self::build(nums, i + 1, end),
+        })))
     }
-    let mut root = TreeNode::new(max);
-    let left = build(nums, start, index - 1);
-    let right = build(nums, index + 1, end);
-    root.left=left;
-    root.right=right;
-    Some(Rc::new(RefCell::new(root)))
 }
