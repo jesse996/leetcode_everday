@@ -22,10 +22,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="最大二叉树 rust">
+    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="从前序与中序遍历序列构造二叉树">
       <change afterPath="$PROJECT_DIR$/../c++/cmake-build-debug/CMakeFiles/c++.dir/T116.cpp.o" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/cmake-build-debug/CMakeFiles/c++.dir/T654.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/t105.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/t106.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
@@ -71,6 +71,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="language.rust" />
   </component>
@@ -182,7 +183,7 @@
       <workItem from="1609662327504" duration="3392000" />
       <workItem from="1609812568152" duration="866000" />
       <workItem from="1609813622676" duration="942000" />
-      <workItem from="1609814946385" duration="6530000" />
+      <workItem from="1609814946385" duration="7215000" />
     </task>
     <task id="LOCAL-00001" summary="字符串中的第一个唯一字符">
       <created>1598888566487</created>
@@ -226,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609822215780</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="从前序与中序遍历序列构造二叉树">
+      <created>1609823193271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609823193271</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +259,8 @@
     <MESSAGE value="字符串的排列" />
     <MESSAGE value="最小的k个数" />
     <MESSAGE value="最大二叉树 rust" />
-    <option name="LAST_COMMIT_MESSAGE" value="最大二叉树 rust" />
+    <MESSAGE value="从前序与中序遍历序列构造二叉树" />
+    <option name="LAST_COMMIT_MESSAGE" value="从前序与中序遍历序列构造二叉树" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
