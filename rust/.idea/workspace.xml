@@ -23,7 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="验证二叉搜索树">
-      <change afterPath="$PROJECT_DIR$/../java/T236.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/T222.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/T222.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -20,13 +20,28 @@ public class T222 {
             val = x;
         }
     }
+
     //将完全二叉树拆为一个满二叉树和另一个完全二叉树
     public int countNodes(TreeNode root) {
         if (root == null) return 0;
-        int leftLevel = countLevel(root.left);
-        int rightLevel = countLevel(root.right);
-        if (leftLevel == rightLevel) return (1 << leftLevel) + countNodes(root.right);
-        else return (1 << rightLevel) + countNodes(root.left);
+//        int leftLevel = countLevel(root.left);
+//        int rightLevel = countLevel(root.right);
+//        if (leftLevel == rightLevel) return (1 << leftLevel) + countNodes(root.right);
+//        else return (1 << rightLevel) + countNodes(root.left);
+        int leftLevel=0,rightLevel=0;
+        TreeNode l=root,r=root;
+        while (l != null) {
+            l=l.left;
+            leftLevel++;
+        }
+        while (r != null) {
+            r=r.right;
+            rightLevel++;
+        }
+        if (leftLevel == rightLevel) {
+            return 1<<leftLevel - 1;
+        }
+        return 1 + countNodes(root.left) + countNodes(root.right);
     }
 
     public int countLevel(TreeNode node) {
