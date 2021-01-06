@@ -42,33 +42,58 @@ class NestedInteger {
     };
 }
 
+//法1
+//class NestedIterator implements Iterator<Integer> {
+//    private Iterator<Integer> it;
+//
+//    public NestedIterator(List<NestedInteger> nestedList) {
+//        List<Integer> res = new LinkedList<>();
+//        for (NestedInteger nestedInteger : nestedList) {
+//            traverse(nestedInteger, res);
+//        }
+//        this.it = res.iterator();
+//    }
+//    private void traverse(NestedInteger nestedInteger,List<Integer> res){
+//        if (nestedInteger.isInteger()) {
+//            res.add(nestedInteger.getInteger());
+//        }else {
+//            for (NestedInteger integer : nestedInteger.getList()) {
+//                traverse(integer, res);
+//            }
+//        }
+//    }
+//
+//    @Override
+//    public Integer next() {
+//        return it.next();
+//    }
+//
+//    @Override
+//    public boolean hasNext() {
+//        return it.hasNext();
+//    }
+//}
+//法2，惰性求值，更好
+
 class NestedIterator implements Iterator<Integer> {
-    private Iterator<Integer> it;
+
+    private final LinkedList<NestedInteger> list;
 
     public NestedIterator(List<NestedInteger> nestedList) {
-        List<Integer> res = new LinkedList<>();
-        for (NestedInteger nestedInteger : nestedList) {
-            traverse(nestedInteger, res);
-        }
-        this.it = res.iterator();
-    }
-    private void traverse(NestedInteger nestedInteger,List<Integer> res){
-        if (nestedInteger.isInteger()) {
-            res.add(nestedInteger.getInteger());
-        }else {
-            for (NestedInteger integer : nestedInteger.getList()) {
-                traverse(integer, res);
-            }
-        }
+        list = new LinkedList<>(nestedList);
     }
 
     @Override
     public Integer next() {
-        return it.next();
+        return list.removeFirst().getInteger();
     }
 
     @Override
     public boolean hasNext() {
-        return it.hasNext();
+        while (!list.isEmpty() && !list.get(0).isInteger()) {
+            List<NestedInteger> tmp = this.list.removeFirst().getList();
+            list.addAll(0, tmp);
+        }
+        return !list.isEmpty();
     }
 }
