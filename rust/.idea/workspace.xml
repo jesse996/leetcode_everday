@@ -22,10 +22,13 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="寻找重复的子树">
-      <change afterPath="$PROJECT_DIR$/src/t98.rs" afterDir="false" />
+    <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="验证二叉搜索树">
+      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/T297.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/T341.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/230.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/230.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +183,7 @@
       <workItem from="1609812568152" duration="866000" />
       <workItem from="1609813622676" duration="942000" />
       <workItem from="1609814946385" duration="11536000" />
-      <workItem from="1609839729739" duration="918000" />
+      <workItem from="1609839729739" duration="1760000" />
     </task>
     <task id="LOCAL-00001" summary="字符串中的第一个唯一字符">
       <created>1598888566487</created>
@@ -245,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609828266191</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="验证二叉搜索树">
+      <created>1609840674709</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609840674709</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +283,8 @@
     <MESSAGE value="从前序与中序遍历序列构造二叉树" />
     <MESSAGE value=" 从中序与后序遍历序列构造二叉树" />
     <MESSAGE value="寻找重复的子树" />
-    <option name="LAST_COMMIT_MESSAGE" value="寻找重复的子树" />
+    <MESSAGE value="验证二叉搜索树" />
+    <option name="LAST_COMMIT_MESSAGE" value="验证二叉搜索树" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

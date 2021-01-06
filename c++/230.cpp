@@ -33,11 +33,11 @@ public:
         if (!root) {
             return;
         }
-        inorder(root->left);
+        inorder(root->left,k);
         rank++;
         if (rank==k){
             res = root->val;
         }
-        inorder(root->right);
+        inorder(root->right,k);
     }
 };
