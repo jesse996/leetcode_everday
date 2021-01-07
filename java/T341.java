@@ -28,19 +28,23 @@ import java.util.List;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class T341 {
-}
 
-class NestedInteger {
-    public boolean isInteger(){
-        return true;
+
+    class NestedInteger {
+        public boolean isInteger() {
+            return true;
+        }
+
+        public Integer getInteger() {
+            return 1;
+        }
+
+        public List<NestedInteger> getList() {
+            return new ArrayList<>();
+        }
+
+        ;
     }
-    public Integer getInteger(){
-        return 1;
-    }
-    public List<NestedInteger> getList(){
-        return new ArrayList<>();
-    };
-}
 
 //法1
 //class NestedIterator implements Iterator<Integer> {
@@ -75,25 +79,26 @@ class NestedInteger {
 //}
 //法2，惰性求值，更好
 
-class NestedIterator implements Iterator<Integer> {
+    class NestedIterator implements Iterator<Integer> {
 
-    private final LinkedList<NestedInteger> list;
+        private final LinkedList<NestedInteger> list;
 
-    public NestedIterator(List<NestedInteger> nestedList) {
-        list = new LinkedList<>(nestedList);
-    }
-
-    @Override
-    public Integer next() {
-        return list.removeFirst().getInteger();
-    }
-
-    @Override
-    public boolean hasNext() {
-        while (!list.isEmpty() && !list.get(0).isInteger()) {
-            List<NestedInteger> tmp = this.list.removeFirst().getList();
-            list.addAll(0, tmp);
+        public NestedIterator(List<NestedInteger> nestedList) {
+            list = new LinkedList<>(nestedList);
         }
-        return !list.isEmpty();
+
+        @Override
+        public Integer next() {
+            return list.removeFirst().getInteger();
+        }
+
+        @Override
+        public boolean hasNext() {
+            while (!list.isEmpty() && !list.get(0).isInteger()) {
+                List<NestedInteger> tmp = this.list.removeFirst().getList();
+                list.addAll(0, tmp);
+            }
+            return !list.isEmpty();
+        }
     }
 }
