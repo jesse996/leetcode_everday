@@ -14,22 +14,48 @@ import java.util.Arrays;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class T300 {
+
+    //动态规划法
+//    public int lengthOfLIS(int[] nums) {
+//        int n = nums.length;
+//        if (n == 0) {
+//            return 0;
+//        }
+//        int[] db = new int[n];
+//        Arrays.fill(db, 1);
+//        int res = 1;
+//        for (int i = 1; i < n; i++) {
+//            for (int j = 0; j < i; j++) {
+//                if (nums[j] < nums[i]) {
+//                    db[i] = Math.max(db[i], db[j] + 1);
+//                }
+//            }
+//            res = Math.max(res, db[i]);
+//        }
+//        return  res;
+//    }
+
+
+    //二分法
     public int lengthOfLIS(int[] nums) {
+        int piles = 0;
         int n = nums.length;
-        if (n == 0) {
-            return 0;
-        }
-        int[] db = new int[n];
-        Arrays.fill(db, 1);
-        int res = 1;
-        for (int i = 1; i < n; i++) {
-            for (int j = 0; j < i; j++) {
-                if (nums[j] < nums[i]) {
-                    db[i] = Math.max(db[i], db[j] + 1);
+        int[] top = new int[n];
+        for (int num : nums) {
+            int left = 0, right = piles - 1;
+            while (left <= right) {
+                int mid = left + (right - left) / 2;
+                if (top[mid] < num) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
                 }
             }
-            res = Math.max(res, db[i]);
+            if (left == piles) {
+                piles++;
+            }
+            top[left] = num;
         }
-        return  res;
+        return piles;
     }
 }
