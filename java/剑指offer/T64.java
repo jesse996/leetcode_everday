@@ -7,6 +7,8 @@ package 剑指offer;
  */
 public class T64 {
     public int sumNums(int n) {
-        return n > 1 ? n + sumNums(n - 1) : 1;
+        int sum = 0;
+        boolean f = n > 1 && (sum += sumNums(n - 1)) > 0;
+        return sum;
     }
 }
