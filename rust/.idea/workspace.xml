@@ -23,7 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c663e17-6dd0-41b9-9d4a-6fdd30522810" name="Default Changelist" comment="验证二叉搜索树">
+      <change afterPath="$PROJECT_DIR$/src/t628.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +74,17 @@
     <property name="settings.editor.selected.configurable" value="language.rust" />
   </component>
   <component name="RunManager" selected="Cargo.Run rust">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run rust" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package rust --bin rust" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -171,6 +184,7 @@
       <workItem from="1609994083649" duration="280000" />
       <workItem from="1610086605031" duration="598000" />
       <workItem from="1610330695158" duration="183000" />
+      <workItem from="1611125791374" duration="272000" />
     </task>
     <task id="LOCAL-00001" summary="字符串中的第一个唯一字符">
       <created>1598888566487</created>

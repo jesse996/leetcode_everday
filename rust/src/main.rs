@@ -9,6 +9,7 @@ mod t105;
 mod t106;
 mod t652;
 mod t98;
+mod t628;
 
 fn main() {
     let vec = vec![3,2,1,6,0,5];
