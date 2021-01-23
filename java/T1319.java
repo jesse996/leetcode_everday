@@ -25,7 +25,7 @@ public class T1319 {
         for (int[] conn : connections) {
             union(conn[0], conn[1]);
         }
-        int count=0;
+        int count = 0;
         for (int i = 0; i < n; i++) {
             if (i == parent[i]) {
                 count++;
@@ -35,10 +35,10 @@ public class T1319 {
     }
 
     public void union(int a, int b) {
-        int pa=find(a);
+        int pa = find(a);
         int pb = find(b);
-        if (pa==pb) return;
-        parent[pb]=pa;
+        if (pa == pb) return;
+        parent[pb] = pa;
     }
 
     public int find(int a) {
