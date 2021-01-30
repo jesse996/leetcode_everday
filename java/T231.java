@@ -16,15 +16,9 @@
 // 输出: false
 
 class T231 {
-  public boolean isPowerOfTwo(int n) {
-    if (n == 1)
-      return true;
-    if (n / 2 > 1 && n % 2 == 0)
-      return isPowerOfTwo(n / 2);
-    else if (n == 2)
-      return true;
-    return false;
-  }
+    public boolean isPowerOfTwo(int n) {
+        return n > 0 && (n & (n - 1)) == 0;
+    }
 }
 // 重点在于对位运算符的理解
 // 解法1：&运算，同1则1。 return (n > 0) && (n & -n) == n;
