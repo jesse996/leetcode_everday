@@ -20,7 +20,7 @@ public class T372 {
 
     //快速幂
     public int myPow(int a, int k) {
-        if (k == 1) return 1;
+        if (k == 0) return 1;
         a %= base;
         if (k % 2 == 1) {
             return (a * myPow(a, k - 1)) % base;
