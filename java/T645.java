@@ -28,6 +28,7 @@ public class T645 {
         for (int i = 1; i <= n; i++) {
             if (nums[i - 1] > 0) {
                 res[1] = i;
+                break;
             }
         }
         return res;
