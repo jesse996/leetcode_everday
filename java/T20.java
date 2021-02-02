@@ -56,22 +56,41 @@ import java.util.*;
 
 class T20 {
   public boolean isValid(String s) {
-    int len = s.length();
-    char[] list = s.toCharArray();
-    char[] stack = new char[len/2];
-    int k = -1;
-    for (int i = 0; i < len; i++) {
-      if (list[i] == '[' || list[i] == '(' || list[i] == '{') {
-        stack[++k]=list[i];
-      }else if(list[i]==stack[k]+1||list[i]==stack[k]+2){
-        k--;
-      }else{
-        return false;
+//    int len = s.length();
+//    char[] list = s.toCharArray();
+//    char[] stack = new char[len/2];
+//    int k = -1;
+//    for (int i = 0; i < len; i++) {
+//      if (list[i] == '[' || list[i] == '(' || list[i] == '{') {
+//        stack[++k]=list[i];
+//      }else if(list[i]==stack[k]+1||list[i]==stack[k]+2){
+//        k--;
+//      }else{
+//        return false;
+//      }
+//    }
+//    if(k>=0){
+//      return false;
+//    }
+//    return true;
+    Stack<Character> stack = new Stack<>();
+    for (char c : s.toCharArray()) {
+      if (c == '[' || c == '(' || c == '{') {
+        stack.push(c);
+      } else {
+        if (!stack.isEmpty()&&leftOf(c) == stack.peek()) {
+          stack.pop();
+        } else {
+          return false;
+        }
       }
     }
-    if(k>=0){
-      return false;
-    }
-    return true;
+    return stack.isEmpty();
+  }
+
+  public char leftOf(char c) {
+    if (c == '}') return '{';
+    if (c == ')') return '(';
+    return '[';
   }
 }
