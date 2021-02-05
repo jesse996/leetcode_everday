@@ -48,17 +48,9 @@ public class T480 {
         private int smallSize, largeSize;
 
         public DualHeap(int k) {
-            this.small = new PriorityQueue<Integer>(new Comparator<Integer>() {
-                public int compare(Integer num1, Integer num2) {
-                    return num2.compareTo(num1);
-                }
-            });
-            this.large = new PriorityQueue<Integer>(new Comparator<Integer>() {
-                public int compare(Integer num1, Integer num2) {
-                    return num1.compareTo(num2);
-                }
-            });
-            this.delayed = new HashMap<Integer, Integer>();
+            this.small = new PriorityQueue<>(Comparator.reverseOrder());
+            this.large = new PriorityQueue<>(Comparator.naturalOrder());
+            this.delayed = new HashMap<>();
             this.k = k;
             this.smallSize = 0;
             this.largeSize = 0;
