@@ -26,16 +26,23 @@ public class T765 {
         for (int i = 0; i < n; i += 2) {
             add(f, row[i] / 2, row[i + 1] / 2);
         }
-        Map<Integer, Integer> map = new HashMap<>();
+//        Map<Integer, Integer> map = new HashMap<>();
+//        for (int i = 0; i < total; i++) {
+//            int root = find(f, i);
+//            map.put(root, map.getOrDefault(root, 0) + 1);
+//        }
+//        int res = 0;
+//        for (int value : map.values()) {
+//            res += value - 1;
+//        }
+//        return res;
+        int cnt = 0;
         for (int i = 0; i < total; i++) {
-            int root = find(f, i);
-            map.put(root, map.getOrDefault(root, 0) + 1);
+            if (find(f, i) == i) {
+                cnt++;
+            }
         }
-        int res = 0;
-        for (int value : map.values()) {
-            res += value - 1;
-        }
-        return res;
+        return total - cnt;
 
     }
 
