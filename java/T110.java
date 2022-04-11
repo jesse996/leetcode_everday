@@ -6,16 +6,18 @@
  * 一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过1。
  */
 
-public class T110 {
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
 
-        TreeNode(int x) {
-            val = x;
-        }
+    TreeNode(int x) {
+        val = x;
     }
+}
+
+public class T110 {
+
 
     public boolean isBalanced(TreeNode root) {
         if (root == null) return true;
@@ -23,7 +25,7 @@ public class T110 {
     }
 
     private int height(TreeNode node) {
-        if (node==null) return 0;
-        return Math.max(height(node.left),height(node.right))+1;
+        if (node == null) return 0;
+        return Math.max(height(node.left), height(node.right)) + 1;
     }
 }
