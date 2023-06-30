@@ -14,7 +14,7 @@
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-//  * Definition for singly-linked list.定义
+//  * Definition for singly-linked list.定义1
 class ListNode {
     int val;
     ListNode next;
